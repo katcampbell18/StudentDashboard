@@ -1,0 +1,28 @@
+html
+    head
+        meta(charset ="utf-8")
+        link(rel="stylesheet" href="style.css")
+        title Students
+    body
+        h1 Student Dashboard
+        br
+        table
+            tr
+                th Name
+                th Home State
+                th Lucky Number
+                th DOB
+                th Action
+            each student in students
+                tr
+                    td= student.name
+                    td= student.home_state
+                    td= student.lucky_number
+                    td= student.birthday
+                    td
+                        a(href="/display/"+student._id) Show | 
+                        a(href="/edit/"+student._id ) Edit |  
+                        a(href="/delete/"+student._id) Delete
+        br
+        br
+        a(href="/add" class="button") Add Student
