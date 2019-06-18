@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html
     head
         meta(charset ="utf-8")
@@ -21,3 +22,28 @@ html
                 label DOB:
                 input(type="date" name="birthday")
             input(type="submit" value="Add Student")
+=======
+html
+    head
+        meta(charset ="utf-8")
+        link(rel="stylesheet" href="style.css")
+        title Add
+    body
+        a(href="/" class="button") Home
+        h1 Add a Student
+        
+        form(action="/create" method="post")
+            .form-group
+                label Name:
+                input(type="text" name="name")
+            .form-group
+                label Home State:
+                input(type="text" name="home_state")
+            .form-group
+                label Lucky Number:
+                input(type="number" name="lucky_number")
+            .form-group
+                label DOB:
+                input(type="date" name="birthday")
+            input(type="submit" value="Add Student")
+>>>>>>> bbbd9c8657323802ecbf14e8ee3ef05a3ab2ac5e

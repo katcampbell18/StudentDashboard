@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html
     head
         meta(charset ="utf-8")
@@ -14,4 +15,22 @@ html
         br
         br
         a(href="/edit/"+student._id class="button") Edit Student |
+=======
+html
+    head
+        meta(charset ="utf-8")
+        link(rel="stylesheet" href="style.css")
+        title Show
+    body
+        h1  #{student.name}
+        br
+        h2 Home State: #{student.home_state}
+        br
+        h2 Lucky Number:  #{student.lucky_number}
+        br
+        h2 DOB: #{student.birthday.toDateString("MMM DD, YYYY")}
+        br
+        br
+        a(href="/edit/"+student._id class="button") Edit Student |
+>>>>>>> bbbd9c8657323802ecbf14e8ee3ef05a3ab2ac5e
         a(href="/" class="button") Home
