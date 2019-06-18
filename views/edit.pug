@@ -1,0 +1,26 @@
+
+html
+    head
+        meta(charset ="utf-8")
+        link(rel="stylesheet" href="style.css")
+        title Edit
+    body
+        h1 Edit #{student.name}
+        form(action="/update" method="post")
+            .form-group
+                label Name:
+                input(type="text" name="name" value=student.name)
+            .form-group
+                label Home State:
+                input(type="text" name="home_state" value=student.home_state)
+            .form-group
+                label Lucky Number:
+                input(type="number" name="lucky_number" value=student.lucky_number)
+            .form-group
+                label DOB:
+                input(type="date" name="birthday" value=student.birthdate)
+            br
+            br
+            input(type="submit" value="Update")
+            br
+            a(href="/" class="button") Home
